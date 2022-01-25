@@ -1,0 +1,515 @@
+body{
+    margin: 0;
+    background-color: #8bfcfd29;
+}
+
+header{
+    background-color: #f0e68c59;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: 5px solid #820606 ;
+}
+
+header a {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 15px;
+    color: #5c0404;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation{
+    display: flex;
+}
+
+.main-menu a{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 15px;
+    color: #c70e0e;
+}
+
+.header{
+    top: 0;
+}
+
+.profile{
+    text-align: left;
+}
+
+.sidebar{
+    display: flex;
+    width: 220px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-group{
+    margin-bottom: 5px;
+}
+
+.good-list{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    color: #740f06;
+}
+
+.goods{
+    border: 1px solid lightgrey;
+    padding: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    min-height: 200px;
+    min-width: 150px;
+}
+
+.good-description {
+    text-align: center;
+    font-size: 20px;
+}
+
+.good-img img{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.price_and_buy{
+    height: 50px;
+}
+
+.price{
+    text-align: center;
+    display: inline-block;
+    height: 75%;
+    width: 50%;
+    box-sizing: border-box;
+    box-align: center;
+    background-color: lightblue;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.buy{
+    margin-top: 10px;
+    width: 10%;
+    color: black;
+    text-decoration: none;
+    user-select: none;
+    background: red;
+    padding: 10px;
+    outline: 0;
+}
+
+.buy:hover {
+    background: salmon;
+    border: 2px solid black;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #740f06;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    left: 22%;
+    bottom: 90%;
+}
+.text1 {
+    color: #740f06;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    left: 10%;
+    bottom: 43%;
+}
+.text2 {
+    color: #740f06;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    left: 29%;
+    bottom: 18%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+@keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+.pagination .btn.active{
+    background-color: rgb(3, 3, 90);
+    color: white;
+}
+
+@media all and (max-width: 1000px) {
+    .main-menu {
+        flex-direction: column;
+        align-items: center;
+        /* line-height: 1.5; */
+    }
+
+    .novig {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-wrapper {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.novig {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-wrapper {
+    display: flex;
+}
+
+.proiz {
+    width: 200px;
+}
+label{
+    cursor: cell;
+}
+.fast_delivery1{
+    margin-left: 650px;
+    
+}
+.section{
+    border-right: 1px solid rgb(167, 3, 3);
+    border-right-width: 3px;
+    border-bottom: 1px solid rgb(167, 3, 3);
+    border-bottom-width: 3px;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 960px
+}
+.student{
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 4px 4px 4px 5px;
+    padding: inherit;
+    
+}
+.fast_delivery{
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 4px;
+    padding: inherit;
+}
+.make_an_order{
+    cursor: pointer;
+    background-color: #c9bcbd;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    height: 100%;
+}
+.make_an_order:hover{
+    background-color: #75c55a;
+    color: black;
+}
+.counter_btn_econom:hover{
+    background-color: #a6ee6b;
+    color: black;
+}
+.counter_btn_business:hover{
+    background-color: #a6ee6b;
+    color: black;
+}
+.counter_btn_vip:hover{
+    background-color: #a6ee6b;
+    color: black;
+}
+footer{
+    color: black;
+    border-top: 3px solid black;
+    padding-top: 20px;
+    justify-content: space-between;
+    min-height: 70px;
+}
+/* .counter_btn_econom_plus:hover{
+    background-color: #0ebe08;
+    color: black;
+}
+.counter_btn_business_plus:hover{
+    background-color: #0ebe08;
+    color: black;
+}
+.counter_btn_vip_plus:hover{
+    background-color: #0ebe08;
+    color: black;
+} */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    height: 40px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn-first-page, .btn-last-page {
+    width: 150px;
+}
+
+.active{
+    background-color: white;
+    color: black;
+
+}
+.form-select1{
+    display: flex;
+    margin-left: 410px;
+}
+.form-select2{
+    display: flex;
+    margin-left: 410px;
+}
+.form-select3{
+    display: flex;
+    margin-left: 410px;
+}
+.form-select4{
+    display: flex;
+    margin-left: 410px;
+}
+.title{
+    margin-left: 620px;
+    display: inline-block;
+}
+.title1{
+    display: inline-block;
+    margin-left: 400px;
+    font-size: 146%;
+    color: #740f06;
+}
+.title2{
+    display: inline-block;
+    margin-left: 400px;
+    font-size: 146%;
+    color: #740f06;
+}
+.title3{
+    display: inline-block;
+    margin-left: 400px;
+    font-size: 146%;
+    color: #740f06;
+}
+.title4{
+    display: inline-block;
+    margin-left: 400px;
+    font-size: 146%;
+    color: #740f06;
+}
+table{
+    color: #740f06;
+    font-size: 150%;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin-left: 35px;
+    width: 1000px;
+    height: 150px;
+}
+.btn-found{
+    margin-left: 900px;
+}
+.btn-add-1{
+    background-color: #a89496;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    margin-left: 300px;
+    visibility: hidden;
+}
+.btn-add-2{
+    background-color: #a89496;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    margin-left: 300px;
+    visibility: hidden;
+}
+.btn-add-3{
+    background-color: #a89496;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    margin-left: 300px;
+    visibility: hidden;
+}
+.btn-add-4{
+    background-color: #a89496;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    margin-left: 300px;
+    visibility: hidden;
+}
+.btn-add-5{
+    background-color: #a89496;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    margin-left: 300px;
+    visibility: hidden;
+}
+
+.btn-add-6{
+    background-color: #a89496;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    visibility: hidden;
+    margin-left: 300px;
+}
+.btn-add-7{
+    background-color: #a89496;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    margin-left: 300px;
+    visibility: hidden;
+}
+
+.btn-add-8{
+    background-color: #a89496;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    margin-left: 300px;
+    visibility: hidden;
+}
+
+.btn-add-9{
+    background-color: #a89496;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    margin-left: 300px;
+    visibility: hidden;
+}
+
+.btn-add-10{
+    background-color: #a89496;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    margin-left: 300px;
+    visibility: hidden;
+}
